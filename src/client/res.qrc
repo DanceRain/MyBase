@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file alias="min">image/icon/minimize.png</file>
+        <file alias="shut">image/icon/shutdown.png</file>
+        <file alias="minAnti">image/icon/minimize anti.png</file>
+        <file alias="shutAnti">image/icon/shutdown anti.png</file>
+    </qresource>
+</RCC>
