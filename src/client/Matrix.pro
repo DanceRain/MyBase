@@ -25,15 +25,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        main.cpp \
-        mainwindow.cpp
+        Login.cpp \
+        Register.cpp \
+        main.cpp
 
 HEADERS += \
-        buttonhoverwatcher.h \
-        mainwindow.h
+        Login.h \
+        Register.h
 
 FORMS += \
-        mainwindow.ui
+        Login.ui \
+        Register.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

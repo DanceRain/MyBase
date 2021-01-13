@@ -7,15 +7,15 @@
 
 
 namespace Ui {
-class MainWindow;
+class Login;
 }
 
-class MainWindow : public QMainWindow
+class Login : public QMainWindow
 {
     Q_OBJECT
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    explicit Login(QWidget *parent = nullptr);
+    ~Login();
 protected:
     void mousePressEvent(QMouseEvent* e);
     void mouseMoveEvent(QMouseEvent* e);
@@ -23,10 +23,11 @@ protected:
 
 private slots:
     void closeWindow();
+    void openRegisterWindow();
 
 private:
     void init();
-    Ui::MainWindow *ui;
+    Ui::Login *ui;
     QPoint last;
 };
 

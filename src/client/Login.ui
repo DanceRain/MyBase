@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Login</class>
+ <widget class="QMainWindow" name="Login">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -24,6 +24,10 @@
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/log</normaloff>:/icon/log</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow{
@@ -51,7 +55,7 @@ QPushButton[text=&quot;登录&quot;]
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>290</y>
+      <y>340</y>
       <width>230</width>
       <height>50</height>
      </rect>
@@ -83,7 +87,7 @@ QPushButton[text=&quot;登录&quot;]
      <string>登录</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -192,18 +196,18 @@ QPushButton{
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>70</y>
+      <x>30</x>
+      <y>140</y>
       <width>301</width>
       <height>151</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="layoutLogin">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="layoutUserName">
        <item>
         <widget class="QLabel" name="labelUserName">
          <property name="minimumSize">
@@ -248,7 +252,7 @@ QPushButton{
       </layout>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="layoutPssowrd">
        <item>
         <widget class="QLabel" name="labelPassword">
          <property name="minimumSize">
@@ -303,9 +307,53 @@ QPushButton{
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="labelMatrix">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>80</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>The Matrix</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btRegister">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>460</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{
+	color: rgb(107, 107, 107);
+}</string>
+    </property>
+    <property name="text">
+     <string>注册账号</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

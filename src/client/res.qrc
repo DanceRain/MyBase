@@ -4,5 +4,6 @@
         <file alias="shut">image/icon/shutdown.png</file>
         <file alias="minAnti">image/icon/minimize anti.png</file>
         <file alias="shutAnti">image/icon/shutdown anti.png</file>
+        <file alias="log">image/icon/log.png</file>
     </qresource>
 </RCC>
