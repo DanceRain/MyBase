@@ -1,6 +1,6 @@
 ﻿#include "Register.h"
 #include "ui_Register.h"
-#include "Login.h"
+#include "MatrixMainWindow.h"
 
 Register::Register(QWidget *parent) :
     QWidget(parent),
@@ -9,13 +9,20 @@ Register::Register(QWidget *parent) :
     ui->setupUi(this);
 }
 
+/*public*/
 Register::~Register()
 {
     delete ui;
 }
 
+/*slots*/
 void Register::on_btBack_clicked()
 {
-    this->hide();
-    static_cast<Login*>(this->parent())->show();
+    emit backLoginWindow();
+}
+
+/*private*/
+void Register::initConnect()
+{
+    connect(ui->btFinishRegister, &QPushButton::clicked, this, &Register::on_btBack_clicked);
 }

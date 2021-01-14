@@ -1,34 +1,31 @@
-﻿#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+﻿#ifndef LOGIN_H
+#define LOGIN_H
 
-#include <QMainWindow>
-#include <QMouseEvent>
-#include <QPushButton>
-
+#include <QWidget>
 
 namespace Ui {
 class Login;
 }
 
-class Login : public QMainWindow
+class Login : public QWidget
 {
     Q_OBJECT
+
 public:
     explicit Login(QWidget *parent = nullptr);
     ~Login();
-protected:
-    void mousePressEvent(QMouseEvent* e);
-    void mouseMoveEvent(QMouseEvent* e);
-    void mouseReleaseEvent(QMouseEvent* e);
 
 private slots:
-    void closeWindow();
-    void openRegisterWindow();
+    void on_btLogin_clicked();
+    void on_btRegister_clicked();
+
+signals:
+    void registerWindow();
+    void userWindow();
 
 private:
-    void init();
+    void initConnect();
     Ui::Login *ui;
-    QPoint last;
 };
 
-#endif // MAINWINDOW_H
+#endif // LOGIN_H

@@ -26,15 +26,18 @@ CONFIG += c++11
 
 SOURCES += \
         Login.cpp \
+        MatrixMainWindow.cpp \
         Register.cpp \
         main.cpp
 
 HEADERS += \
         Login.h \
+        MatrixMainWindow.h \
         Register.h
 
 FORMS += \
         Login.ui \
+        MatrixMainWindow.ui \
         Register.ui
 
 # Default rules for deployment.

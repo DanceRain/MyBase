@@ -18,7 +18,11 @@ public:
 private slots:
     void on_btBack_clicked();
 
+signals:
+    void backLoginWindow();
+
 private:
+    void initConnect();
     Ui::Register *ui;
 };
 
